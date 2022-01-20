@@ -1,32 +1,34 @@
 # Pytorch-YOLOv4
 
 ## Directory Structure
-:::
-├── README.md
-├── dataset.py                      dataset
-├── demo.py                         demo to run pytorch
-├── models.py                       model for pytorch
-├── train.py                        train models.py
-├── cfg
-│   ├── yolov4.cfg                  official config
-│   └── yolov4-obj.cfg              fine-tune config
-├── data
-│   ├── coco.names                  coco dataset label
-│   ├── voc.names                   voc dataset label
-│   └── x.names                     fine-tune label
-├── weight
-│   ├── yolov4.weights              official weights
-│   └── yolov4_finetune.weights     fine-tune weights
-├── tool
-│   ├── camera.py                   a demo camera
-│   ├── coco_annotation.py          coco dataset generator
-│   ├── config.py
-│   ├── darknet2pytorch.py
-│   ├── region_loss.py
-│   ├── utils.py
-│   └── yolo_layer.py
-└── result                          output
-:::
+
+### A typical top-level directory layout
+    .
+    ├── README.md
+    ├── dataset.py                      dataset
+    ├── demo.py                         demo to run pytorch
+    ├── models.py                       model for pytorch
+    ├── train.py                        train models.py
+    ├── cfg
+    │   ├── yolov4.cfg                  official config
+    │   └── yolov4-obj.cfg              fine-tune config
+    ├── data
+    │   ├── coco.names                  coco dataset label
+    │   ├── voc.names                   voc dataset label
+    │   └── x.names                     fine-tune label
+    ├── weight
+    │   ├── yolov4.weights              official weights
+    │   └── yolov4_finetune.weights     fine-tune weights
+    ├── tool
+    │   ├── camera.py                   a demo camera
+    │   ├── coco_annotation.py          coco dataset generator
+    │   ├── config.py
+    │   ├── darknet2pytorch.py
+    │   ├── region_loss.py
+    │   ├── utils.py
+    │   └── yolo_layer.py
+    └── result                          output
+
 
 ## Recommended version
 pytorch 1.7.1+cu101
