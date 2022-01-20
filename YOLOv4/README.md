@@ -44,4 +44,9 @@ pytorch 1.7.1+cu101
     result/<video_file>/output.mp4 : input video with bounding box visualize
     result/<video_file>/{<video_file>_frame_{id}}.jpg : each frame with bounding box visualize
     result/<video_file>/{<video_file>_traj_{id}}.jpg : each frame only bounding box visualize and basektball center visualize
+    
+## Download Weights File
+* [yolov4.weights]()
+* [yolov4_finetune.weights]()
+
 
