@@ -38,10 +38,11 @@ pytorch 1.7.1+cu101
     e.g. python demo.py -cfgfile cfg/yolov4-obj.cfg -weightfile weights/yolov4_finetune.weights -imgfile data/SH_Source6_R.mp4
 
 ## Output
-> terminal : basektball bounding box coordinate (x1, y1, x2, y2)
-
-> result/<video_file>/bbox.txt : each frame basketball center coordinate (x, y)
-> result/<video_file>/output.mp4 : input video with bounding box visualize
-> result/<video_file>/{<video_file>_frame_{id}}.jpg : each frame with bounding box visualize
-> result/<video_file>/{<video_file>_traj_{id}}.jpg : each frame only bounding box visualize and basektball center visualize
+    terminal output : basektball bounding box coordinate (x1, y1, x2, y2)
+    
+    file output : 
+    result/<video_file>/bbox.txt : each frame basketball center coordinate (x, y)
+    result/<video_file>/output.mp4 : input video with bounding box visualize
+    result/<video_file>/{<video_file>_frame_{id}}.jpg : each frame with bounding box visualize
+    result/<video_file>/{<video_file>_traj_{id}}.jpg : each frame only bounding box visualize and basektball center visualize
 
