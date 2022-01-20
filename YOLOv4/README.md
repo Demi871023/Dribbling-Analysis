@@ -2,7 +2,6 @@
 
 ## Directory Structure
 
-### A typical top-level directory layout
     .
     ├── README.md
     ├── dataset.py                      dataset
