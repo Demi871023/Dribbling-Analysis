@@ -34,8 +34,8 @@
 pytorch 1.7.1+cu101
 
 ## Terminal command
-python demo.py -cfgfile <cfg_file> -weightfile <weights_file> -imgfile <video_file>
-e.g. python demo.py -cfgfile cfg/yolov4-obj.cfg -weightfile weights/yolov4_finetune.weights -imgfile data/SH_Source6_R.mp4
+    python demo.py -cfgfile <cfg_file> -weightfile <weights_file> -imgfile <video_file>
+    e.g. python demo.py -cfgfile cfg/yolov4-obj.cfg -weightfile weights/yolov4_finetune.weights -imgfile data/SH_Source6_R.mp4
 
 ## Output
 > terminal : basektball bounding box coordinate (x1, y1, x2, y2)
