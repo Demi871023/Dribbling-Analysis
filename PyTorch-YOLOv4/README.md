@@ -46,7 +46,7 @@ pytorch 1.7.1+cu101
     result/<video_file>/{<video_file>_traj_{id}}.jpg : each frame only bounding box visualize and basektball center visualize
     
 ## Download Weights File
-* [yolov4.weights]()
-* [yolov4_finetune.weights]()
+* official : [yolov4.weights](https://365nthu-my.sharepoint.com/:u:/g/personal/110062534_office365_nthu_edu_tw/Ece54wUwjMBOu1MRjezNxPoBSLFZ0OsMSxt5GSBDPHa_YQ?e=KxynYv)
+* training on dribbling dataset : [yolov4_finetune.weights](https://365nthu-my.sharepoint.com/:u:/g/personal/110062534_office365_nthu_edu_tw/EcU9RnE-iZxDhfuZyGbd0koB8qsityJD7RHI_HGAf7h6eA?e=g9rtgr)
 
 
