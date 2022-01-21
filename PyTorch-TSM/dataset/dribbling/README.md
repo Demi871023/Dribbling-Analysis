@@ -37,3 +37,36 @@
             ├── 000002.jpg
             ├── ...   
             └── 00000N.mp4
+            
+## JSON File
+
+### dribbling-train.json
+```python
+[
+    {"id": "193", "label": "behind dirbble"}, 
+    {"id": "123", "label": "behind dirbble"}, 
+    ...
+    {"id": "182", "label": "behind dirbble"}, 
+    {"id": "194", "label": "behind dirbble"},
+]
+```
+
+### dribbling-test.json
+```python
+[
+    {"id":"2355"}
+]
+```
+
+### dribbling-valid.json
+```python
+[
+    {"id": "7", "label": "behind dirbble"}, 
+    {"id": "11", "label": "behind dirbble"}, 
+    ...
+    {"id": "15", "label": "behind dirbble"}, 
+    {"id": "21", "label": "behind dirbble"},
+]
+```
+## TXT File Format
+    videoID frameCount labelID
