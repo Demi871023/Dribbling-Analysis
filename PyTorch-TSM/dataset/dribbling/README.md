@@ -70,3 +70,4 @@
 ```
 ## TXT File Format
     videoID frameCount labelID
+    e.g. 193 35 0
