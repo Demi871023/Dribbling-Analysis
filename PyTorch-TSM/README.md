@@ -34,7 +34,7 @@
 Assign dataset path in ops/dataset_config.py
 ```python
 def return_datasetname(modality):
-    filename_categories = 'dribbling/category.txt'
+    filename_categories = '{datasetname}/category.txt'
     if modality == 'RGB':
         root_data = ROOT_DATASET + '/{datasetname}/{datasetname}-frames'
         filename_imglist_train = '{datasetname}/train_videofolder.txt'
