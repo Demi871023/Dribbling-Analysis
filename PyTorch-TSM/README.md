@@ -30,6 +30,31 @@
     ├── tsm_fpga
     └── result                                                                  each video with label prediction
 
+## Training Dataset
+Assign dataset path in ops/dataset_config.py
+```python
+def return_datasetname(modality):
+    filename_categories = 'dribbling/category.txt'
+    if modality == 'RGB':
+        root_data = ROOT_DATASET + '/{datasetname}/{datasetname}-frames'
+        filename_imglist_train = '{datasetname}/train_videofolder.txt'
+        filename_imglist_val = '{datasetname}/valid_videofolder.txt'
+        prefix = '{:06d}.jpg'
+    elif modality == 'Flow':
+        root_data = ROOT_DATASET + ''
+        filename_imglist_train = ''
+        filename_imglist_val = ''
+        prefix = '{:06d}.jpg'
+    else:
+        raise NotImplementedError('no such modality:'+modality)
+    return filename_categories, filename_imglist_train, filename_imglist_val, root_data, prefix
+    
+    
+def return_dataset(dataset, modality):
+    dict_single = {'jester': return_jester, 'something': return_something, 'somethingv2': return_somethingv2,
+                   'ucf101': return_ucf101, 'hmdb51': return_hmdb51,
+                   'kinetics': return_kinetics, 'dribbling': return_dribbling, '{datasetname}': return_datasetname}
+```
 
 ## Terminal command
 
