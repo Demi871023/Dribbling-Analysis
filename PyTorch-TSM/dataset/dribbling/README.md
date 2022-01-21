@@ -40,7 +40,7 @@
             
 ## JSON File
 
-### dribbling-train.json
+### dataset-train.json
 ```python
 [
     {"id": "193", "label": "behind dirbble"}, 
@@ -51,14 +51,14 @@
 ]
 ```
 
-### dribbling-test.json
+### dataset-test.json
 ```python
 [
     {"id":"2355"}
 ]
 ```
 
-### dribbling-valid.json
+### dataset-valid.json
 ```python
 [
     {"id": "7", "label": "behind dirbble"}, 
