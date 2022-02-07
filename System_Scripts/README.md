@@ -38,7 +38,7 @@
 
 ### PlayerRecord.cs
 
-    ```csharp
-    public void Output_JsonFile()
+```csharp
+public void Output_JsonFile()
     
-    ```
+```
