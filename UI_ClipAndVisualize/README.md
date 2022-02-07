@@ -36,4 +36,4 @@
 
 
 ## How to use
-<img src="https://i.imgur.com/bkB06cv.png">
+![image](https://github.com/Demi871023/Dribbling-Analysis/blob/main/UI_ClipAndVisualize/Tutorial/tutorial.gif)
