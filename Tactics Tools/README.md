@@ -33,7 +33,7 @@
 
 ### How to run
 ```
-python main.py -m [DT/PJ/TC]
+python main.py -m [DT/PJ/TC] -c [config file] -s [source path] -d [destination path]
 ```
 
 ### Visualize Trajecotry
