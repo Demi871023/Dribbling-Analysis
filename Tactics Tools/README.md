@@ -12,6 +12,12 @@
     ├── draw.py
     ├── coordinate.py
     ├── config.py
+    ├── TACTICSDB_CLASSIFICATION
+    │   ├── Player 1
+    │   ├── Player 2
+    │   ├── Player 3
+    │   ├── Player 4
+    │   └── Player 5
     ├── TACTICSDB
     │   ├── 0_04.FIRST.91.BOX.npy
     │   ├── 0_04.FLOPPY.12.HAWK.py
