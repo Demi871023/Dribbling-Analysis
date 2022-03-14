@@ -9,7 +9,7 @@
     ├── README.md
     ├── main.py                                                                 train model
     ├── parser.py
-    ├── draw.py
+    ├── visualize.py
     ├── coordinate.py
     ├── config.py
     ├── TACTICSDB_CLASSIFICATION
@@ -26,7 +26,7 @@
     ├── JSONSOURCE                                                                 
     └── DESTINATION
         ├── PARSER
-        ├── DRAW
+        ├── Visualize
         └── COORDINATE
 
 
@@ -36,7 +36,7 @@
 python main.py -m [DT/PJ/TC]
 ```
 
-### Draw Trajecotry
+### Visualize Trajecotry
 
 ### Parser Court Athena .json File
 
