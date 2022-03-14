@@ -3,12 +3,35 @@
   > Can do : (1) Draw Trajecotry (2) Parser Court Athena .json File, (3) Transfer to Unity Coordinate
 
 
+### Directory Structure
+
+    .
+    ├── README.md
+    ├── main.py                                                                 train model
+    ├── parser.py
+    ├── draw.py
+    ├── coordinate.py
+    ├── config.py
+    ├── TACTICSDB
+    │   ├── 0_04.FIRST.91.BOX.npy
+    │   ├── 0_04.FLOPPY.12.HAWK.py
+    │   ...
+    │   └── 11)PUNCH.15.MOTION.GIVE.npy
+    ├── JSONSOURCE                                                                 
+    └── DESTINATION
+        ├── PARSER
+        ├── DRAW
+        └── COORDINATE
+
+
+
+### How to run
 ```
 python main.py -m [DT/PJ/TC]
 ```
 
-## (1) Draw Trajecotry
+### Draw Trajecotry
 
-## (2) Parser Court Athena .json File
+### Parser Court Athena .json File
 
-## (3) Transfer to Unity Coordinate
+### Transfer to Unity Coordinate
