@@ -41,3 +41,9 @@ python main.py -m [DT/PJ/TC] -c [config file] -s [source path] -d [destination p
 ### Parser Court Athena .json File
 
 ### Transfer to Unity Coordinate
+
+
+
+
+### Resource
+* [TACTICSDB DOWNLOAD](https://365nthu-my.sharepoint.com/:u:/g/personal/110062534_office365_nthu_edu_tw/EZzc5UCJwg1KpKpVeBId-eMB0wrnaIgxpihlwSK6Xx4x4w?e=wz5eD3)
