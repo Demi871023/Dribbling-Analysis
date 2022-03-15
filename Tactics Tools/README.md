@@ -89,6 +89,8 @@ python main.py -m [DT/PJ/TC] -c [config file] -s [source path] -d [destination p
 
 ### Transfer to Unity Coordinate
 
+#### Tactic Coordinate and Unity Coordinate
+![image](https://github.com/Demi871023/Dribbling-Analysis/blob/main/Tactics%20Tools/PICTURE/TCIMG1.png)
 
 
 
