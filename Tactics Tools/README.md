@@ -63,7 +63,7 @@ python main.py -m [DT/PJ/TC] -c [config file] -s [source path] -d [destination p
 #### Output File Format Example
   
   ```
-  51                                      → steps in this tactics
+  20                                      → steps in this tactics
   5                                       → the 1st frame who is free, for example : the 5 player is free in 1st frame
   5
   4
