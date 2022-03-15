@@ -40,6 +40,53 @@ python main.py -m [DT/PJ/TC] -c [config file] -s [source path] -d [destination p
 
 ### Parser Court Athena .json File
 
+#### Input JSON Format Example
+
+  ```json
+  [
+    {
+      "duration":2,
+      "eventType":"空檔",
+      "labels":[
+        {
+          "name":"選手",
+          "type":"選手",
+          "value":"Bn1GSD4zuo"
+        }
+      ],
+      "startFrame":0,
+      "firebaseKey":"-MxUAqNJxHGlZXveZpuF"
+    },
+  ]
+  ```
+
+#### Output File Format Example
+  
+  ```
+  20                                      → steps in this tactics
+  5                                       → the 1st frame who is free, for example : the 5 player is free in 1st frame
+  5
+  4
+  4
+  4                                       → the 5st frame who is free, for example : the 4 player is free in 8st frame
+  -1                                      → -1 is meaning that no player is free in this frame
+  -1
+  -1
+  -1
+  -1
+  -1
+  2
+  2
+  2
+  2
+  2
+  2,3                                     → the 17st frame who is free, for example : the 2 or 3 player is free in 17st frame
+  2,3
+  2,3
+  2,3
+  0,1,2,3,4,11,12,13,14,15,16,17,18,19    → which frames is have free player
+  ```
+
 ### Transfer to Unity Coordinate
 
 
