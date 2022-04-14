@@ -14,6 +14,9 @@ from mmcv.parallel import collate, scatter
 from mmaction.apis import init_recognizer
 from mmaction.datasets.pipelines import Compose
 
+# from mmaction.apis import init_recognizer
+# from mmaction.datasets.pipelines import Compose
+
 import Configs
 
 HIGHTLOCATION = 0
