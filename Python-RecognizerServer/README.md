@@ -9,6 +9,7 @@
     ├── Server.py
     ├── Configs.py
     ├── ImageRecognizer.py
+    ├── VisualAttention.py
     ├── tools
     │   └── quaternion.py
     ├── Recognizer
