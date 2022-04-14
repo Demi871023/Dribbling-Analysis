@@ -4,6 +4,8 @@ from threading import Thread
 
 import Configs
 import ImageRecognizer as Recognizer
+import VisualAttention as Attention
+
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -13,7 +15,6 @@ def recv_socket():
         print(message)
 
         mess = message.split(",")
-
 
         if mess[0] == "SET":
             if mess[1] == "Unmovable":
@@ -57,11 +58,9 @@ def recv_socket():
                 print("Connect Successful...")
             if mess[1] == "Bye":
                 Configs.connect_state = Configs.CONNECT_STATE_BYE
+                # thread_visual_attention.join()
                 print("Disconnected...")
-
-
-        else:
-            pass
+                break
 
 def run_socket():
     global conn
@@ -81,6 +80,10 @@ def run_socket():
     thread_recv.start()
 
     while True:
+
+        if Configs.connect_state == Configs.CONNECT_STATE_BYE:
+            break
+
         if Configs.training_state == Configs.STATE_PAUSE:
             sendmessage = "TRAINING PAUSE"
             conn.sendall(sendmessage.encode())
@@ -90,23 +93,23 @@ def run_socket():
 
 
 
-def intial_socket():
+def initial_socket():
     server.bind((Configs.SERVER_HOST, Configs.SERVER_PORT))
     server.listen(Configs.LISTEN_NUM)
     print(" *** SERVER START *** ")
 
-def inital_image_recognizer():
+def initial_image_recognizer():
     Recognizer.image_recognizer_main()
 
 
 if __name__ == "__main__":
 
-    camera = cv2.VideoCapture(1, cv2.CAP_DSHOW)
-
-    intial_socket()
-    inital_image_recognizer()
+    # Initialize sock and recognizer module
+    initial_socket()
+    initial_image_recognizer()
 
     if Configs.RECOGNIZER_MODE == "IMAGE":
+
         thread_socket = Thread(target=run_socket, args=(), daemon=True)
         thread_image_recognizer = Thread(target = Recognizer.inference, args = (), daemon = True)
         thread_image_visualize = Thread(target= Recognizer.visualize, args = (), daemon = True)
@@ -115,7 +118,12 @@ if __name__ == "__main__":
         thread_image_recognizer.start()
         thread_image_recognizer.join()
         thread_image_visualize.join()
-        # thread_socket.join()
+
+        conn.close()    # Disconnected...
+
+        thread_visual_attention = Thread(target = Attention.attention_main, args = (), daemon = True)
+        thread_visual_attention.start()
+        thread_visual_attention.join()
 
     if Configs.RECOGNIZER_MODE == "IMU":
         pass
